@@ -1,6 +1,7 @@
 <h2>Here are the details of your cocktail</h2>
 <h3><%= @cocktail.name %></h3>
-<%= link_to "Back", cocktails_path %>
-<%= link_to "Create a new cocktail", new_cocktail_path %>
+<h4><%= link_to "Back", cocktails_path %></h4>
+<h4><%= link_to "Edit that cocktail", edit_cocktail_path(@cocktail) %></h4>
+<h4><%= link_to "Create a new cocktail", new_cocktail_path %></h4>
 
 

@@ -23,6 +23,7 @@ class CocktailsController < ApplicationController
 
   def update
     @cocktail.update(cocktail_params)
+    redirect_to cocktails_path(@cocktail)
   end
 
   def destroy
